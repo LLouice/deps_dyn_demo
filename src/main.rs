@@ -1,7 +1,8 @@
-use dyn_test::deps::{reqwest, serde, serde_json, tokio};
+use deps_dyn_demo::deps::{reqwest, serde, serde_json, tokio};
 
+#[allow(dead_code)]
 #[derive(Debug, serde::Deserialize)]
-#[serde(crate = "dyn_test::deps::serde")]
+#[serde(crate = "deps_dyn_demo::deps::serde")]
 struct Person {
     name: String,
     age: u32,
