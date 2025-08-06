@@ -1,0 +1,2 @@
+[target.x86_64-apple-darwin] # For Intel-based Macs
+rustflags = ["-C", "link-arg=-fuse-ld=/Users/llouice/.pixi/envs/tools/bin/ld64.lld"]

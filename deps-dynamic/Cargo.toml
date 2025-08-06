@@ -12,3 +12,9 @@ tokio = { version = "1.47.1", features = ["full"] }
 
 [lib]
 crate-type = ["dylib"]
+
+[profile.dev]
+split-debuginfo = "unpacked"
+
+[profile.dev.build-override]
+opt-level = 3

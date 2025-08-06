@@ -5,3 +5,9 @@ edition = "2024"
 
 [dependencies]
 deps_dynamic = { path = "./deps-dynamic" }
+
+[profile.dev]
+split-debuginfo = "unpacked"
+
+[profile.dev.build-override]
+opt-level = 3
