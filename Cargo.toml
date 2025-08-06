@@ -1,0 +1,7 @@
+[package]
+name = "dyn_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deps_dynamic = { path = "./deps-dynamic" }
