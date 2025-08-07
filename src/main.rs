@@ -20,11 +20,12 @@ async fn main() {
     println!("Response: {}", res);
 
     let value: serde_json::Value =
-        serde_json::from_reader(std::fs::File::open("../resp.json").unwrap())
+        serde_json::from_reader(std::fs::File::open("/Users/llouice/tmp/resp.json").unwrap())
             .expect("Failed to parse JSON from stdin");
     println!("Parsed JSON: {:?}", value);
 
-    let person: Person = serde_json::from_reader(std::fs::File::open("../Person.json").unwrap())
-        .expect("Failed to parse Person JSON");
+    let person: Person =
+        serde_json::from_reader(std::fs::File::open("/Users/llouice/tmp/Person.json").unwrap())
+            .expect("Failed to parse Person JSON");
     println!("Parsed Person: {:?}", person);
 }
